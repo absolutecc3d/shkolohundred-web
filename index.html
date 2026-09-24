@@ -3,98 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShkoloHundred — Разширение за дневника</title>
+    <title>ShkoloHundred — Локални оценки в дневника</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="hero">
-    <div class="hero-content">
-        <div class="logo">6</div>
-        <h1>ShkoloHundred</h1>
-        <p class="subtitle">Променяй оценките локално. Красиво. Бързо. Безопасно.</p>
-        <a class="download-btn" href="https://drive.google.com/file/d/1HDG3W5N7kqDR4L0VFQ8A_51grYBG9D-N/view?usp=sharing" target="_blank">
-            ⬇ Изтегли разширението
-        </a>
+<header class="topbar">
+    <div class="topbar-inner">
+        <div class="topbar-left">
+            <div class="logo-circle">6</div>
+            <span class="brand">ShkoloHundred</span>
+        </div>
+        <nav class="topbar-right">
+            <a href="#about">За разширението</a>
+            <a href="#features">Функции</a>
+            <a href="#tutorial">Инсталация</a>
+            <a class="topbar-download" href="https://drive.google.com/file/d/1HDG3W5N7kqDR4L0VFQ8A_51grYBG9D-N/view?usp=sharing" target="_blank">
+                Изтегли
+            </a>
+        </nav>
     </div>
 </header>
 
-<section class="features">
-    <h2>Какво представлява ShkoloHundred?</h2>
-    <p>ShkoloHundred е браузърно разширение, което ти позволява да променяш оценките в дневника локално — само на твоя компютър. Нищо не се записва в Shkolo, нищо не се изпраща към сървъри. Просто „какво ако“ инструмент.</p>
-
-    <div class="feature-grid">
-        <div class="feature">
-            <h3>Локални промени</h3>
-            <p>Всичко остава само при теб. Няма съхранение в облак.</p>
+<section class="hero" id="about">
+    <div class="hero-inner">
+        <div class="hero-text">
+            <h1>ShkoloHundred</h1>
+            <p class="hero-subtitle">
+                Визуално променяй оценките в Shkolo дневника — локално, безопасно и с красив интерфейс.
+            </p>
+            <div class="hero-actions">
+                <a class="hero-download" href="https://drive.google.com/file/d/1HDG3W5N7kqDR4L0VFQ8A_51grYBG9D-N/view?usp=sharing" target="_blank">
+                    ⬇ Изтегли разширението
+                </a>
+                <span class="hero-note">ZIP файл · първо го разархивирай</span>
+            </div>
         </div>
-        <div class="feature">
-            <h3>Красив интерфейс</h3>
-            <p>Модерен popup, цветове като в Shkolo, анимации и плавни преходи.</p>
-        </div>
-        <div class="feature">
-            <h3>Бързо нулиране</h3>
-            <p>Един бутон — всички оценки се връщат към оригиналните.</p>
-        </div>
-        <div class="feature">
-            <h3>Безопасно</h3>
-            <p>Не променя реални оценки. Само визуално.</p>
+        <div class="hero-preview">
+            <div class="popup-card">
+                <div class="popup-header">
+                    <div class="popup-logo">6</div>
+                    <div>
+                        <div class="popup-title">ShkoloHundred</div>
+                        <div class="popup-tag">натисни оценка, избери нова</div>
+                    </div>
+                </div>
+                <div class="popup-body">
+                    <div class="popup-row">
+                        <div>
+                            <div class="popup-label">Смяна на оценка</div>
+                            <div class="popup-desc">Включено · клик върху оценка</div>
+                        </div>
+                        <div class="popup-switch"></div>
+                    </div>
+                    <div class="popup-scale">
+                        <div class="popup-label">Скала</div>
+                        <div class="popup-scale-row">
+                            <div class="popup-grade">
+                                <span class="grade-circle grade-2">2</span>
+                                <small>Слаб</small>
+                            </div>
+                            <div class="popup-grade">
+                                <span class="grade-circle grade-3">3</span>
+                                <small>Среден</small>
+                            </div>
+                            <div class="popup-grade">
+                                <span class="grade-circle grade-4">4</span>
+                                <small>Добър</small>
+                            </div>
+                            <div class="popup-grade">
+                                <span class="grade-circle grade-5">5</span>
+                                <small>Мн. добър</small>
+                            </div>
+                            <div class="popup-grade">
+                                <span class="grade-circle grade-6">6</span>
+                                <small>Отличен</small>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="popup-reset">Reset all grades on this page</button>
+                    <div class="popup-status">2 оценки променени на тази страница</div>
+                    <div class="popup-foot">Промените са само локални.</div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<section class="tutorial">
-    <h2>Как да инсталираш ShkoloHundred</h2>
+<section class="section" id="features">
+    <div class="section-inner">
+        <h2>Защо ShkoloHundred?</h2>
+        <p class="section-lead">
+            Разширението е създадено за „какво ако“ сценарии — да видиш как биха изглеждали оценките ти,
+            без да променяш реалния дневник.
+        </p>
 
-    <h3>1. Изтегли разширението</h3>
-    <p>Натисни бутона „Изтегли разширението“ горе.</p>
-
-    <h3>2. Разархивирай ZIP файла</h3>
-    <p><strong>Важно:</strong> Първо трябва да разархивираш ZIP файла. Ако не го разархивираш, Chrome няма да го зареди.</p>
-
-    <h3>3. Инсталация в Google Chrome</h3>
-    <ol>
-        <li>Отвори Chrome.</li>
-        <li>Влез в: <strong>chrome://extensions</strong></li>
-        <li>Включи <strong>Developer mode / Режим за разработчици</strong> (горе вдясно).</li>
-        <li>Натисни <strong>Load unpacked / Зареди разархивирана папка</strong>.</li>
-        <li>Избери папката, която разархивира.</li>
-    </ol>
-
-    <h3>4. Инсталация в Microsoft Edge</h3>
-    <ol>
-        <li>Отвори Edge.</li>
-        <li>Влез в: <strong>edge://extensions</strong></li>
-        <li>Включи <strong>Developer mode</strong>.</li>
-        <li>Натисни <strong>Load unpacked</strong>.</li>
-        <li>Избери разархивираната папка.</li>
-    </ol>
-
-    <h3>5. Инсталация в Brave</h3>
-    <ol>
-        <li>Отвори Brave.</li>
-        <li>Влез в: <strong>brave://extensions</strong></li>
-        <li>Включи <strong>Developer mode</strong>.</li>
-        <li>Натисни <strong>Load unpacked</strong>.</li>
-        <li>Избери разархивираната папка.</li>
-    </ol>
-
-    <h3>6. Инсталация в Opera</h3>
-    <ol>
-        <li>Отвори Opera.</li>
-        <li>Влез в: <strong>opera://extensions</strong></li>
-        <li>Включи <strong>Developer mode</strong>.</li>
-        <li>Натисни <strong>Load unpacked</strong>.</li>
-        <li>Избери разархивираната папка.</li>
-    </ol>
-
-    <h3>Готово!</h3>
-    <p>След инсталация ще видиш иконата на ShkoloHundred горе вдясно. Отвори дневника в Shkolo и започни да променяш оценки локално.</p>
+        <div class="cards">
+            <div class="card">
+                <h3>Локални промени</h3>
+                <p>Всичко се случва само в твоя браузър. Няма изпращане към сървъри, няма промяна на реални оценки.</p>
+            </div>
+            <div class="card">
+                <h3>Интуитивен интерфейс</h3>
+                <p>Клик върху оценка отваря popup с цветна скала от 2 до 6. Анимации правят смяната плавна и приятна.</p>
+            </div>
+            <div class="card">
+                <h3>Бързо нулиране</h3>
+                <p>Един бутон връща всички променени оценки към оригиналните им стойности, с анимация при връщане.</p>
+            </div>
+            <div class="card">
+                <h3>Безопасно за дневника</h3>
+                <p>ShkoloHundred не изпраща заявки към Shkolo за промяна на оценки. Всичко е чисто визуално.</p>
+            </div>
+        </div>
+    </div>
 </section>
 
-<footer>
-    <p>© 2026 ShkoloHundred — Проект на Yoan</p>
+<section class="section section-alt" id="tutorial">
+    <div class="section-inner">
+        <h2>Инсталация на ShkoloHundred</h2>
+        <p class="section-lead">
+            Следвай стъпките по-долу, за да добавиш разширението в любимия си браузър.
+        </p>
+
+        <div class="steps-grid">
+            <div class="step-card">
+                <h3>1. Изтегли и разархивирай</h3>
+                <p>Натисни бутона „Изтегли разширението“ горе. Ще получиш ZIP файл.</p>
+                <p><strong>Важно:</strong> Разархивирай ZIP файла в папка (например <em>ShkoloHundred</em>). Браузърът не може да зареди директно ZIP.</p>
+            </div>
+
+            <div class="step-card">
+                <h3>2. Google Chrome</h3>
+                <ol>
+                    <li>Отвори Chrome.</li>
+                    <li>В адресната лента напиши: <strong>chrome://extensions</strong></li>
+                    <li>Включи <strong>Developer mode / Режим за разработчици</strong> (горе вдясно).</li>
+                    <li>Натисни <strong>Load unpacked / Зареди разархивирана папка</strong>.</li>
+                    <li>Избери папката, в която разархивира ZIP файла.</li>
+                </ol>
+            </div>
+
+            <div class="step-card">
+                <h3>3. Microsoft Edge</h3>
+                <ol>
+                    <li>Отвори Edge.</li>
+                    <li>В адресната лента напиши: <strong>edge://extensions</strong></li>
+                    <li>Включи <strong>Developer mode</strong>.</li>
+                    <li>Натисни <strong>Load unpacked</strong>.</li>
+                    <li>Избери разархивираната папка.</li>
+                </ol>
+            </div>
+
+            <div class="step-card">
+                <h3>4. Brave</h3>
+                <ol>
+                    <li>Отвори Brave.</li>
+                    <li>В адресната лента напиши: <strong>brave://extensions</strong></li>
+                    <li>Включи <strong>Developer mode</strong>.</li>
+                    <li>Натисни <strong>Load unpacked</strong>.</li>
+                    <li>Избери разархивираната папка.</li>
+                </ol>
+            </div>
+
+            <div class="step-card">
+                <h3>5. Opera</h3>
+                <ol>
+                    <li>Отвори Opera.</li>
+                    <li>В адресната лента напиши: <strong>opera://extensions</strong></li>
+                    <li>Включи <strong>Developer mode</strong>.</li>
+                    <li>Натисни <strong>Load unpacked</strong>.</li>
+                    <li>Избери разархивираната папка.</li>
+                </ol>
+            </div>
+
+            <div class="step-card">
+                <h3>6. Използване</h3>
+                <p>След инсталация ще видиш иконата на ShkoloHundred горе вдясно.</p>
+                <p>Отвори дневника в Shkolo, кликни върху оценка и ще се появи popup за смяна. Бутонът „Reset all grades on this page“ връща всичко към оригиналното.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-inner">
+        <span>ShkoloHundred · Локални визуални промени в дневника</span>
+    </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
