@@ -9,6 +9,7 @@ body {
     font-family: "Segoe UI", Roboto, Arial, sans-serif;
     background: #0b1724;
     color: #e8eef4;
+    line-height: 1.5;
 }
 
 /* Topbar */
@@ -341,6 +342,63 @@ body {
     margin: 0;
     font-size: 13px;
     color: #cfd8e3;
+}
+
+/* Security Section */
+
+.section-security {
+    background: #0f1a28;
+    padding: 50px 18px;
+}
+
+.security-box {
+    margin-top: 26px;
+    background: #111b27;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.05);
+}
+
+.security-left {
+    text-align: center;
+    padding-right: 24px;
+    border-right: 1px solid rgba(255,255,255,0.08);
+}
+
+.vt-score {
+    font-size: 42px;
+    font-weight: 700;
+    color: #21b573;
+}
+
+.vt-label {
+    font-size: 13px;
+    color: #9fb0c3;
+    margin-top: 4px;
+}
+
+.security-right p {
+    margin: 0 0 10px;
+    color: #cfd8e3;
+}
+
+.vt-button {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #1a9be0;
+    color: #ffffff;
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 8px 24px rgba(26,155,224,0.35);
+    transition: 0.15s;
+}
+
+.vt-button:hover {
+    filter: brightness(1.1);
 }
 
 /* Tutorial */
