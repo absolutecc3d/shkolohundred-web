@@ -13,7 +13,7 @@ document.querySelectorAll(".fade-up").forEach(el => observer.observe(el));
 // Download button → open file + scroll to instructions
 function triggerDownloadAndScroll() {
     window.open(
-        "https://drive.google.com/uc?export=download&id1HDG3W5N7kqDR4L0VFQ8A_51grYBG9D-N",
+        "https://drive.google.com/uc?export=download&id=1HDG3W5N7kqDR4L0VFQ8A_51grYBG9D-N",
         "_blank"
     );
 
