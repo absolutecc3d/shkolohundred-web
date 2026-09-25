@@ -801,13 +801,13 @@ a {
 }
 
 .feature-card.large {
-    grid-column: span 2;
+    grid-column: span 1;
     min-height: 270px;
     padding: 26px;
 }
 
 .feature-card.large .feature-icon {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .local-shkolo-image {
@@ -816,12 +816,12 @@ a {
     left: auto;
     transform: none;
     display: block;
-    width: 240px;
-    max-width: 100%;
-    height: 70px;
+    width: 85%;
+    max-width: 260px;
+    height: 105px;
     object-fit: contain;
     object-position: center;
-    margin: 0 auto 12px;
+    margin: 0 auto 10px;
     border-radius: 16px;
     pointer-events: none;
     filter: drop-shadow(0 12px 20px rgba(0, 0, 0, 0.3));
@@ -840,7 +840,7 @@ a {
 }
 
 .feature-card.large .feature-content p {
-    max-width: 650px;
+    max-width: 100%;
 }
 
 .security-section {
