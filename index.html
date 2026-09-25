@@ -3,202 +3,685 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>ShkoloHundred — Локални визуални оценки</title>
+
+    <meta name="description" content="ShkoloHundred — модерна локална визуализация на оценки в Shkolo.">
+    <meta name="theme-color" content="#0b0d12">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="topbar">
-    <div class="topbar-inner">
-        <div class="topbar-left">
-            <div class="logo-circle">6</div>
-            <span class="brand">ShkoloHundred</span>
-        </div>
-        <nav class="topbar-right">
-            <a href="#about" class="nav-link">За разширението</a>
-            <a href="#features" class="nav-link">Функции</a>
-            <a href="#security" class="nav-link">Безопасност</a>
-            <a href="#tutorial" class="nav-link">Инсталация</a>
-            <button class="topbar-download" id="downloadBtn">Изтегли</button>
-        </nav>
+    <div class="background">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="orb orb-three"></div>
+        <div class="grid"></div>
     </div>
-</header>
 
-<section class="hero" id="about">
-    <div class="hero-inner">
-        <div class="hero-text fade-up">
-            <h1>ShkoloHundred</h1>
-            <p class="hero-subtitle">
-                Модерна визуализация на оценки в Shkolo — изцяло локално, без изпращане на данни.
-            </p>
-            <div class="hero-actions">
-                <button class="hero-download" id="downloadBtn2">⬇ Изтегли разширението</button>
-                <span class="hero-note">ZIP файл · първо го разархивирай</span>
-            </div>
+    <header class="topbar">
+        <div class="topbar-inner">
+
+            <a href="#about" class="brand">
+                <span class="brand-icon">6</span>
+                <span>Shkolo<span>Hundred</span></span>
+            </a>
+
+            <nav class="nav">
+                <a href="#features" class="nav-link">Функции</a>
+                <a href="#security" class="nav-link">Безопасност</a>
+                <a href="#tutorial" class="nav-link">Инсталация</a>
+
+                <button class="nav-download" id="downloadBtn">
+                    Изтегли
+                    <span>↓</span>
+                </button>
+            </nav>
+
+            <button class="mobile-menu" id="mobileMenu" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
         </div>
+    </header>
 
-        <div class="hero-preview fade-up">
-            <div class="popup-card">
-                <div class="popup-header">
-                    <div class="popup-logo">6</div>
+
+    <main>
+
+        <section class="hero" id="about">
+
+            <div class="hero-inner">
+
+                <div class="hero-content fade-up">
+
+                    <div class="announcement">
+                        <span class="announcement-dot"></span>
+                        Локално Chrome разширение
+                        <span class="announcement-arrow">→</span>
+                    </div>
+
+                    <h1>
+                        Направи Shkolo
+                        <span>по свой начин.</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        ShkoloHundred добавя модерна визуализация на оценките,
+                        която работи изцяло локално на твоето устройство.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <button class="primary-button" id="downloadBtn2">
+                            <span>↓</span>
+                            Изтегли разширението
+                        </button>
+
+                        <a href="#features" class="secondary-button">
+                            Виж функциите
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                    <div class="hero-meta">
+                        <span>
+                            <i></i>
+                            Локално
+                        </span>
+
+                        <span>
+                            <i></i>
+                            Без акаунт
+                        </span>
+
+                        <span>
+                            <i></i>
+                            ZIP файл
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="extension-wrapper fade-up">
+
+                    <div class="extension-glow"></div>
+
+                    <div class="extension-card">
+
+                        <div class="extension-top">
+
+                            <div class="extension-brand">
+                                <div class="extension-logo">6</div>
+
+                                <div>
+                                    <strong>ShkoloHundred</strong>
+                                    <small>Визуални оценки</small>
+                                </div>
+                            </div>
+
+                            <div class="extension-menu">•••</div>
+
+                        </div>
+
+
+                        <div class="extension-divider"></div>
+
+
+                        <div class="setting">
+
+                            <div>
+                                <strong>Смяна на оценка</strong>
+                                <small>Клик върху оценка</small>
+                            </div>
+
+                            <div class="toggle">
+                                <div></div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="grade-box">
+
+                            <div class="grade-box-header">
+                                <strong>Скала</strong>
+                                <span>2 — 6</span>
+                            </div>
+
+                            <div class="grades">
+
+                                <div class="grade">
+                                    <div class="grade-circle grade-2">2</div>
+                                    <small>Слаб</small>
+                                </div>
+
+                                <div class="grade">
+                                    <div class="grade-circle grade-3">3</div>
+                                    <small>Среден</small>
+                                </div>
+
+                                <div class="grade">
+                                    <div class="grade-circle grade-4">4</div>
+                                    <small>Добър</small>
+                                </div>
+
+                                <div class="grade">
+                                    <div class="grade-circle grade-5">5</div>
+                                    <small>Мн. добър</small>
+                                </div>
+
+                                <div class="grade">
+                                    <div class="grade-circle grade-6">6</div>
+                                    <small>Отличен</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <button class="reset-button">
+                            Нулирай всички оценки
+                        </button>
+
+
+                        <div class="changed">
+                            <span class="changed-dot"></span>
+                            2 оценки променени
+                        </div>
+
+                        <div class="local-note">
+                            Промените са само локални.
+                        </div>
+
+                    </div>
+
+                    <div class="floating-badge badge-one">
+                        <span>✓</span>
+                        100% локално
+                    </div>
+
+                    <div class="floating-badge badge-two">
+                        <span>⚡</span>
+                        Бързо
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="stats-section">
+
+            <div class="stats">
+
+                <div class="stat fade-up">
+                    <strong>0</strong>
+                    <span>изпратени оценки</span>
+                </div>
+
+                <div class="stat fade-up">
+                    <strong>100%</strong>
+                    <span>локална обработка</span>
+                </div>
+
+                <div class="stat fade-up">
+                    <strong>1</strong>
+                    <span>клик за нулиране</span>
+                </div>
+
+                <div class="stat fade-up">
+                    <strong>∞</strong>
+                    <span>визуални промени</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="section" id="features">
+
+            <div class="section-header fade-up">
+
+                <div class="eyebrow">
+                    <span></span>
+                    ФУНКЦИИ
+                </div>
+
+                <h2>
+                    Просто. Бързо.
+                    <span>Локално.</span>
+                </h2>
+
+                <p>
+                    ShkoloHundred е направено с една идея —
+                    да промени начина, по който виждаш оценките си,
+                    без да променя реалните данни.
+                </p>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+                <article class="feature-card large fade-up">
+
+                    <div class="feature-icon purple">
+                        ✦
+                    </div>
+
+                    <div class="feature-content">
+
+                        <h3>Локални промени</h3>
+
+                        <p>
+                            Промените се визуализират единствено в твоя браузър.
+                            Реалните оценки в Shkolo не се променят.
+                        </p>
+
+                        <div class="feature-tag">
+                            <span></span>
+                            Само на твоето устройство
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="feature-card fade-up">
+
+                    <div class="feature-icon blue">
+                        ◈
+                    </div>
+
+                    <h3>Модерен интерфейс</h3>
+
+                    <p>
+                        Чист интерфейс, плавни анимации и ясна визуализация.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card fade-up">
+
+                    <div class="feature-icon green">
+                        ↻
+                    </div>
+
+                    <h3>Бързо нулиране</h3>
+
+                    <p>
+                        Върни всички визуални промени обратно с един бутон.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card wide fade-up">
+
+                    <div class="feature-icon orange">
+                        ⛨
+                    </div>
+
                     <div>
-                        <div class="popup-title">ShkoloHundred</div>
-                        <div class="popup-tag">натисни оценка, избери нова</div>
+
+                        <h3>Без събиране на данни</h3>
+
+                        <p>
+                            Разширението не изисква акаунт и не изпраща
+                            оценките ти към външен сървър.
+                        </p>
+
                     </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section class="security-section" id="security">
+
+            <div class="security-inner">
+
+                <div class="section-header security-header fade-up">
+
+                    <div class="eyebrow">
+                        <span></span>
+                        БЕЗОПАСНОСТ
+                    </div>
+
+                    <h2>
+                        Проверено.
+                        <span>Прозрачно.</span>
+                    </h2>
+
+                    <p>
+                        Можеш сам да провериш файла чрез VirusTotal
+                        и да видиш резултата от сканирането.
+                    </p>
+
                 </div>
 
-                <div class="popup-body">
-                    <div class="popup-row">
-                        <div>
-                            <div class="popup-label">Смяна на оценка</div>
-                            <div class="popup-desc">Включено · клик върху оценка</div>
+
+                <div class="security-card fade-up">
+
+                    <div class="security-score">
+
+                        <div class="score-ring">
+                            <div>
+                                <strong>0</strong>
+                                <span>/ 100</span>
+                            </div>
                         </div>
-                        <div class="popup-switch"></div>
+
+                        <strong class="score-title">
+                            Няма открити заплахи
+                        </strong>
+
+                        <span class="score-subtitle">
+                            Резултат от VirusTotal
+                        </span>
+
                     </div>
 
-                    <div class="popup-scale">
-                        <div class="popup-label">Скала</div>
-                        <div class="popup-scale-row">
-                            <div class="popup-grade"><span class="grade-circle grade-2">2</span><small>Слаб</small></div>
-                            <div class="popup-grade"><span class="grade-circle grade-3">3</span><small>Среден</small></div>
-                            <div class="popup-grade"><span class="grade-circle grade-4">4</span><small>Добър</small></div>
-                            <div class="popup-grade"><span class="grade-circle grade-5">5</span><small>Мн. добър</small></div>
-                            <div class="popup-grade"><span class="grade-circle grade-6">6</span><small>Отличен</small></div>
+
+                    <div class="security-details">
+
+                        <div class="security-status">
+                            <span class="status-icon">✓</span>
+
+                            <div>
+                                <strong>Проверено и чисто</strong>
+                                <span>Пълно сканиране на файла</span>
+                            </div>
                         </div>
+
+
+                        <div class="security-list">
+
+                            <div>
+                                <span>✓</span>
+                                Няма вируси
+                            </div>
+
+                            <div>
+                                <span>✓</span>
+                                Няма троянски коне
+                            </div>
+
+                            <div>
+                                <span>✓</span>
+                                Няма малуер
+                            </div>
+
+                            <div>
+                                <span>✓</span>
+                                Няма мрежова активност
+                            </div>
+
+                            <div>
+                                <span>✓</span>
+                                Няма съмнително поведение
+                            </div>
+
+                            <div>
+                                <span>✓</span>
+                                Няма модифицирани файлове
+                            </div>
+
+                        </div>
+
+
+                        <a
+                            class="virus-button"
+                            href="https://www.virustotal.com/gui/file/1c8bc14a91d49dc6afbe851b5b5a73f18ac6248297b77f610b464ce67d85307a?nocache=1"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Отвори VirusTotal
+                            <span>↗</span>
+                        </a>
+
                     </div>
 
-                    <button class="popup-reset">Reset all grades</button>
-                    <div class="popup-status">2 оценки променени</div>
-                    <div class="popup-foot">Промените са само локални.</div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<section class="section" id="features">
-    <div class="section-inner fade-up">
-        <h2>Функции</h2>
-        <p class="section-lead">
-            ShkoloHundred предоставя модерна, безопасна и локална визуализация на оценки — без промяна на реалните данни.
-        </p>
-
-        <div class="cards">
-            <div class="card fade-up"><h3>Локални промени</h3><p>Всичко се случва само на твоя компютър.</p></div>
-            <div class="card fade-up"><h3>Модерен интерфейс</h3><p>Плавни анимации и професионален дизайн.</p></div>
-            <div class="card fade-up"><h3>Бързо нулиране</h3><p>Един бутон връща всички оценки към оригиналните.</p></div>
-            <div class="card fade-up"><h3>Пълна безопасност</h3><p>Не изпраща заявки. Не събира данни.</p></div>
-        </div>
-    </div>
-</section>
-
-<section class="section section-security" id="security">
-    <div class="section-inner fade-up">
-
-        <div class="security-header">
-            <h2>Безопасност и проверка</h2>
-            <p class="section-lead">
-                Файлът е проверен в VirusTotal — резултатът е <strong>0 / 100</strong> детекции.
-            </p>
-        </div>
-
-        <div class="security-showcase">
-
-            <div class="security-left fade-up">
-                <div class="vt-score">0 / 100</div>
-                <div class="vt-sub">Пълно сканиране · 0 открити заплахи</div>
             </div>
 
-            <div class="security-right fade-up">
-                <div class="vt-panel">
-                    <h3>Проверено и чисто</h3>
-                    <p>Сканирано с над 100 антивирусни двигателя.</p>
+        </section>
 
-                    <ul class="vt-list">
-                        <li>✔ Няма вируси</li>
-                        <li>✔ Няма троянски коне</li>
-                        <li>✔ Няма малуер</li>
-                        <li>✔ Няма съмнително поведение</li>
-                        <li>✔ Няма модифицирани файлове</li>
-                        <li>✔ Няма мрежова активност</li>
-                    </ul>
 
-                    <a class="vt-button"
-                       href="https://www.virustotal.com/gui/file/1c8bc14a91d49dc6afbe851b5b5a73f18ac6248297b77f610b464ce67d85307a?nocache=1"
-                       target="_blank">
-                        Отвори VirusTotal доклада
-                    </a>
+        <section class="section install-section" id="tutorial">
+
+            <div class="section-header fade-up">
+
+                <div class="eyebrow">
+                    <span></span>
+                    ИНСТАЛАЦИЯ
                 </div>
+
+                <h2>
+                    Готово за
+                    <span>няколко минути.</span>
+                </h2>
+
+                <p>
+                    Изтегли ZIP файла, разархивирай го и го добави
+                    като непакетирано разширение.
+                </p>
+
+            </div>
+
+
+            <div class="install-grid">
+
+                <article class="install-card fade-up">
+
+                    <div class="step-number">01</div>
+
+                    <h3>Изтегли файла</h3>
+
+                    <p>
+                        Натисни бутона за изтегляне и запази ZIP файла
+                        на компютъра си.
+                    </p>
+
+                    <div class="code-pill">
+                        ZIP
+                    </div>
+
+                </article>
+
+
+                <article class="install-card fade-up">
+
+                    <div class="step-number">02</div>
+
+                    <h3>Разархивирай</h3>
+
+                    <p>
+                        Извлечи съдържанието на ZIP файла в отделна папка.
+                    </p>
+
+                    <div class="code-pill">
+                        📁 ShkoloHundred
+                    </div>
+
+                </article>
+
+
+                <article class="install-card fade-up">
+
+                    <div class="step-number">03</div>
+
+                    <h3>Отвори разширенията</h3>
+
+                    <p>
+                        В браузъра отвори страницата за управление
+                        на разширения.
+                    </p>
+
+                    <div class="browser-links">
+                        <span>chrome://extensions</span>
+                        <span>edge://extensions</span>
+                    </div>
+
+                </article>
+
+
+                <article class="install-card fade-up">
+
+                    <div class="step-number">04</div>
+
+                    <h3>Developer mode</h3>
+
+                    <p>
+                        Включи режима за разработчици от горния десен
+                        ъгъл на страницата.
+                    </p>
+
+                    <div class="code-pill">
+                        Developer mode
+                    </div>
+
+                </article>
+
+
+                <article class="install-card fade-up">
+
+                    <div class="step-number">05</div>
+
+                    <h3>Load unpacked</h3>
+
+                    <p>
+                        Натисни „Load unpacked“ и избери папката,
+                        която разархивира по-рано.
+                    </p>
+
+                    <div class="code-pill">
+                        Load unpacked
+                    </div>
+
+                </article>
+
+
+                <article class="install-card final-card fade-up">
+
+                    <div class="step-number">06</div>
+
+                    <h3>Готово!</h3>
+
+                    <p>
+                        Отвори Shkolo и кликни върху оценка,
+                        за да използваш ShkoloHundred.
+                    </p>
+
+                    <div class="ready">
+                        <span>✓</span>
+                        Готово за използване
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <div class="browser-note fade-up">
+
+                <strong>Поддържани браузъри</strong>
+
+                <div>
+                    <span>Chrome</span>
+                    <span>Edge</span>
+                    <span>Brave</span>
+                    <span>Opera</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="download-section">
+
+            <div class="download-box fade-up">
+
+                <div class="download-decoration decoration-one"></div>
+                <div class="download-decoration decoration-two"></div>
+
+                <div class="download-content">
+
+                    <div class="eyebrow">
+                        <span></span>
+                        SHKOLOHUNDRED
+                    </div>
+
+                    <h2>
+                        Готов ли си да
+                        <span>го изпробваш?</span>
+                    </h2>
+
+                    <p>
+                        Изтегли разширението и започни за по-малко
+                        от минута.
+                    </p>
+
+                    <button class="primary-button big" id="downloadBtn3">
+                        <span>↓</span>
+                        Изтегли ShkoloHundred
+                    </button>
+
+                    <small>
+                        ZIP файл · разархивирай преди инсталация
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="footer-inner">
+
+            <div class="footer-brand">
+
+                <div class="brand-icon">6</div>
+
+                <div>
+                    <strong>ShkoloHundred</strong>
+                    <span>Локална визуализация на оценки</span>
+                </div>
+
+            </div>
+
+            <div class="footer-right">
+                Локално · Безплатно · Без акаунт
             </div>
 
         </div>
 
-    </div>
-</section>
+    </footer>
 
-<section class="section section-alt" id="tutorial">
-    <div class="section-inner fade-up">
-        <h2>Инсталация</h2>
-        <p class="section-lead">Следвай стъпките, за да добавиш ShkoloHundred към браузъра си.</p>
 
-        <div class="steps-grid">
-            <div class="step-card fade-up">
-                <h3>1. Изтегли и разархивирай</h3>
-                <p>Изтегли ZIP файла от бутона горе.</p>
-                <p><strong>Важно:</strong> Разархивирай ZIP файла.</p>
-            </div>
+    <script src="script.js"></script>
 
-            <div class="step-card fade-up">
-                <h3>2. Google Chrome</h3>
-                <ol>
-                    <li>chrome://extensions</li>
-                    <li>Developer mode</li>
-                    <li>Load unpacked</li>
-                    <li>Избери папката</li>
-                </ol>
-            </div>
-
-            <div class="step-card fade-up">
-                <h3>3. Microsoft Edge</h3>
-                <ol>
-                    <li>edge://extensions</li>
-                    <li>Developer mode</li>
-                    <li>Load unpacked</li>
-                </ol>
-            </div>
-
-            <div class="step-card fade-up">
-                <h3>4. Brave</h3>
-                <ol>
-                    <li>brave://extensions</li>
-                    <li>Developer mode</li>
-                    <li>Load unpacked</li>
-                </ol>
-            </div>
-
-            <div class="step-card fade-up">
-                <h3>5. Opera</h3>
-                <ol>
-                    <li>opera://extensions</li>
-                    <li>Developer mode</li>
-                    <li>Load unpacked</li>
-                </ol>
-            </div>
-
-            <div class="step-card fade-up">
-                <h3>6. Готово!</h3>
-                <p>Отвори Shkolo и кликни върху оценка.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<footer class="footer">
-    <div class="footer-inner">
-        <span>ShkoloHundred · Модерна локална визуализация на оценки</span>
-    </div>
-</footer>
-
-<script src="script.js"></script>
 </body>
 </html>
