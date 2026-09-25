@@ -808,13 +808,13 @@ a {
 .local-shkolo-image {
     position: absolute;
     top: 24px;
-    right: 24px;
-    width: 52%;
-    max-width: 480px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 62%;
+    max-width: 520px;
     height: auto;
     display: block;
     object-fit: contain;
-    object-position: center;
     border-radius: 18px;
     pointer-events: none;
     filter: drop-shadow(0 20px 35px rgba(0, 0, 0, 0.4));
@@ -824,7 +824,7 @@ a {
 .feature-card.large .feature-content {
     position: relative;
     z-index: 2;
-    margin-top: 220px;
+    margin-top: 245px;
     max-width: 100%;
 }
 
