@@ -140,26 +140,28 @@ a {
     letter-spacing: -0.02em;
 }
 
-.brand > span:last-child > span {
-    color: var(--green);
-}
-
 .brand-icon {
     width: 36px;
     height: 36px;
     display: grid;
     place-items: center;
-    border-radius: 11px;
-    color: #06100b;
+    flex-shrink: 0;
+    border-radius: 50%;
+    color: #ffffff;
     background: linear-gradient(
         135deg,
-        #54f5b3,
-        #24c98b
+        #4b596b,
+        #29323f
     );
+    border: 1px solid rgba(255, 255, 255, 0.16);
     font-weight: 900;
     box-shadow:
-        0 8px 30px rgba(54, 230, 160, 0.2),
-        inset 0 1px rgba(255, 255, 255, 0.4);
+        0 8px 30px rgba(0, 0, 0, 0.25),
+        inset 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.brand > span:last-child > span {
+    color: var(--green);
 }
 
 .nav {
@@ -427,9 +429,15 @@ a {
     height: 41px;
     display: grid;
     place-items: center;
-    border-radius: 12px;
-    color: #06100b;
-    background: linear-gradient(135deg, #55f4b5, #24c88a);
+    flex-shrink: 0;
+    border-radius: 50%;
+    color: #ffffff;
+    background: linear-gradient(
+        135deg,
+        #4b596b,
+        #29323f
+    );
+    border: 1px solid rgba(255, 255, 255, 0.16);
     font-weight: 900;
     font-size: 18px;
 }
@@ -939,12 +947,17 @@ a {
 .status-icon {
     width: 42px;
     height: 42px;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 0;
     border-radius: 12px;
     background: rgba(54, 230, 160, 0.1);
     color: var(--green);
     font-weight: 900;
+    line-height: 1;
+    text-align: center;
 }
 
 .security-status strong,
@@ -1218,7 +1231,7 @@ a {
 .footer-brand .brand-icon {
     width: 30px;
     height: 30px;
-    border-radius: 9px;
+    border-radius: 50%;
     font-size: 13px;
 }
 
