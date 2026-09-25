@@ -803,36 +803,26 @@ a {
 .feature-card.large {
     grid-column: span 1;
     min-height: 270px;
-    padding: 26px;
 }
 
 .feature-card.large .feature-icon {
-    position: relative;
-    z-index: 2;
     margin-bottom: 14px;
 }
 
 .local-shkolo-image {
-    position: relative;
     display: block;
     width: 100%;
-    max-width: 280px;
     height: 105px;
     object-fit: cover;
     object-position: center;
-    margin: 0 auto 14px;
     border-radius: 18px;
+    margin: 0 0 14px;
     pointer-events: none;
-    filter: drop-shadow(0 12px 20px rgba(0, 0, 0, 0.3));
 }
 
 .feature-card.large .feature-content {
     position: relative;
-    left: auto;
-    right: auto;
-    bottom: auto;
     z-index: 2;
-    max-width: 100%;
 }
 
 .feature-card.large .feature-content h3 {
