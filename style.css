@@ -812,7 +812,7 @@ a {
 .local-shkolo-image {
     display: block;
     width: 100%;
-    height: 321px;
+    height: 150px;
     object-fit: cover;
     object-position: center;
     border-radius: 18px;
