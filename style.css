@@ -807,19 +807,25 @@ a {
 
 .local-shkolo-image {
     position: absolute;
-    top: 50%;
+    top: 24px;
     right: 24px;
-    transform: translateY(-50%);
-    width: 43%;
-    max-width: 390px;
+    width: 52%;
+    max-width: 480px;
     height: auto;
-    max-height: calc(100% - 40px);
     display: block;
     object-fit: contain;
     object-position: center;
     border-radius: 18px;
     pointer-events: none;
     filter: drop-shadow(0 20px 35px rgba(0, 0, 0, 0.4));
+    z-index: 1;
+}
+
+.feature-card.large .feature-content {
+    position: relative;
+    z-index: 2;
+    margin-top: 220px;
+    max-width: 100%;
 }
 
 .security-section {
