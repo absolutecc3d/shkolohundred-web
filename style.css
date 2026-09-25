@@ -807,16 +807,18 @@ a {
 
 .local-shkolo-image {
     position: absolute;
-    right: 25px;
-    bottom: 0;
-    width: 46%;
-    max-width: 430px;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+    width: 43%;
+    max-width: 390px;
     height: auto;
+    max-height: calc(100% - 40px);
     display: block;
     object-fit: contain;
-    object-position: bottom right;
+    object-position: center;
+    border-radius: 18px;
     pointer-events: none;
-    border-radius: 18px 18px 0 0;
     filter: drop-shadow(0 20px 35px rgba(0, 0, 0, 0.4));
 }
 
